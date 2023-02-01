@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thanwa Chaichankanchang">
+    <title>Order Form</title>
+</head>
+
+<body>
+    <h1>Order Form</h1>
+    <form>
+        <fieldset>
+            <legend>Basic Information</legend>
+            <label for="name" style="line-height:1.5em;">Name:&emsp;</label>
+            <input type="text" id="name" name="name" placeholder="Thanwa" size="30" disabled><br>
+            <label for="email" style="line-height:2em;">Email:&emsp;</label>
+            <input type="email" id="email" name="email" placeholder="chai0041@algonquinlive.com" size="30"><br>
+            <label for="address">Address:&nbsp;</label>
+            <textarea style="vertical-align: middle;" id="address" name="address" cols="25" rows="6"></textarea><br>
+            <label for="postcode" style="line-height:1.5em;">Postcode:</label>
+            <input type="text" id="postcode" name="postcode"><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Product Information</legend>
+            <table style="border:1px solid black;">
+                <tr>
+                    <th style="border:1px solid black;">Product</th>
+                    <th style="border:1px solid black;">Part Number</th>
+                    <th style="width: 100px;border:1px solid black;">Quantity</th>
+                    <th style="border:1px solid black">Unit Price</th>
+                    <th style="width: 150px;border:1px solid black;">Subtotal</th>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black;">Box</td>
+                    <td style="border:1px solid black;">AC100</td>
+                    <td style="border:1px solid black;"></td>
+                    <td style="border:1px solid black;">$5</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black;">Coffee Table</td>
+                    <td style="border:1px solid black;">AC200</td>
+                    <td style="border:1px solid black;"></td>
+                    <td style="border:1px solid black;">$100</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black;">Chair</td>
+                    <td style="border:1px solid black;">AC300</td>
+                    <td style="border:1px solid black;"></td>
+                    <td style="border:1px solid black;">$150</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black;">Desk</td>
+                    <td style="border:1px solid black;">AC400</td>
+                    <td style="border:1px solid black;"></td>
+                    <td style="border:1px solid black;">$120</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid black;">Computer Table</td>
+                    <td style="border:1px solid black;">AC500</td>
+                    <td style="border:1px solid black;"></td>
+                    <td style="border:1px solid black;">$130</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+                <tr>
+                    <td colspan="4" style="text-align: right;border:1px solid black;">Total:</td>
+                    <td style="border:1px solid black;"></td>
+                </tr>
+            </table>
+            <p><b>Credit Card Information</b></p>
+            <p>Card Type:</p>
+            <input type="radio" id="master" name="cardtype"><label for="master">Mastercard</label>
+            <label for="cardnumber">&emsp;&ensp;Card Number: </label>
+            <input type="number" id="cardnumber" name="cardnumber"><br>
+            <input type="radio" id="visa" name="cardtype"><label for="visa">Visa</label>
+            <label for="expirydate">&emsp;&emsp;&emsp;&emsp;&emsp;Expiry date: </label>
+            <input type="date" id="expirydate" name="expirydate"><br>
+            <input type="radio" id="giftcard" name="cardtype"><label for="giftcard">Gift Card</label><br>
+            <br>
+            <label for="delivery"><b>Delivery Address:</b></label>
+            <textarea name="delivery" id="delivery" cols="25" rows="6" style="vertical-align: middle;"></textarea><br>
+            <br>
+            <input type="submit" value="Send Order">
+            <input type="reset" value="Clear Form">
+        </fieldset>
+
+    </form>
+</body>
+
+</html>

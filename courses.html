@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+
+    <!-- link with css stylesheet-->
+    <link rel="stylesheet" href="./stylesheet/stylesheet.css">
+
+    <!-- import font from google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--nav bar-->
+        <nav>
+            <a href="index.html">Bobby</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="courses.html">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-courses">
+        <section class="program-info">
+            <div>
+                <h1 class="heading">Computer Programming Program</h1>
+                <p>
+                    The two-year Computer Programming Ontario College Diploma program prepares you for a career in
+                    software development. The program also specializes in program development strategies (using
+                    object-oriented modelling), database design and database administration.
+                </p>
+            </div>
+
+            <!--search bar with filter by and sort by options-->
+            <div class="search-bar">
+                <form>
+                    <input type="text" name="search" placeholder="Search for a course"><button id="search-btn">Search</button>
+                    <select name="filter" id="filter">
+                        <option value="">Filter by</option>
+                        <option value="low-to-high">Level 1</option>
+                        <option value="high-to-low">Level 2</option>
+                    </select>
+                    <select name="sort-course" id="sort-course">
+                        <option value="">Sort by</option>
+                        <option value="low-to-high">Level: Low to High</option>
+                        <option value="high-to-low">Level: High to Low</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+
+        <!--List of level 1 courses-->
+        <h2 id="level1-heading">Level 1</h2>
+        <section class="course-list level1">
+            
+            <div class="each-course">
+                <img src="./images/computer_essential.jpg" alt="computer essential course">
+                <h3>CST8101 Computer Essentials</h3>
+                <p>
+                    The essentials of computer software, hardware, and laptop management form the foundation
+                    for building further technical programming skills. Learn to configure your laptop environment,
+                    basic PC and troubleshoot problems.
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/intro_to_prog.jpg" alt="Introduction to Computer Programming course">
+                <h3>CST8116 Introduction to Computer Programming</h3>
+                <p>
+                    Possessing the fundamentals of logic, problem-solving and programming language structure
+                    provides a solid foundation for further study in the field. The course introduce
+                    knowledge of computer programming with emphasis on problem analysis and design, using
+                    algorithms, pseudocode, flowcharts, UML Class Diagrams and testing, with the Java programming language
+                    used as a means to implement problem solution designs. 
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/intro_to_db.jpg" alt="Introduction to Database course">
+                <h3>CST8215 Introduction to Database</h3>
+                <p>
+                    Databases are used to store data and are a core component of many information technology
+                    systems. The course introduces the fundamentals of relational databases design using 
+                    Entity Relation Diagrams (ERDs), and use Structured Query Language (SQL) to create, modify 
+                    and query a database.
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/achieving_success.jpg" alt="Achieving Success in Changing Environments course">
+                <h3>CST8300 Achieving Success in Changing Environments</h3>
+                <p>
+                    Rapid changes in technology have created personal and employment choices that challenge each of
+                    us to find our place as contributing citizens in the emerging society. Life in the 21st century
+                    presents significant opportunities, but it also creates potential hazards and ethical problems that
+                    demand responsible solutions. 
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/commu1.jpg" alt="Communication 1 course">
+                <h3>ENL1813T Communications I</h3>
+                <p>
+                    Communication remains an essential skill sought by employers, regardless of discipline or field
+                    of study. Using a practical, vocation-oriented approach, students focus on meeting the requirements of
+                    effective communication. Through a combination of lectures, exercises, and independent learning, students
+                    practise writing, speaking, reading, listening, locating and documenting information and using technology
+                    to communicate professionally. 
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/math.jpg" alt="Technical Mathematics course">
+                <h3>MAT8001C Technical Mathematics for Computer Science</h3>
+                <p>
+                    The study of algebraic and transcendental functions is an essential prerequisite to Calculus.
+                    Students manipulate algebraic expressions, solve algebraic equations and linear systems and
+                    learn the properties of and graph algebraic and transcendental functions. Students investigate
+                    computer number systems in addition to Boolean algebra and logic to help solve problems involving
+                    computer systems. Students also study the addition and subtraction of vectors using vector components.
+                </p>
+            </div>
+        </section>
+
+        <!--List of level 2 courses-->
+        <h2 id="level2-heading">Level 2</h2>
+        <section class="course-list level2">
+            
+            <div class="each-course">
+                <img src="./images/database.jpg" alt="Database Systems course">
+                <h3>CST2355 Database Systems</h3>
+                <p>
+                    Database systems can automate data processing tasks as well as tie into the security of
+                    information technology systems. Students acquire practical experience using market-leading object-relational
+                    database management systems. Database concepts covered include advanced SQL, case structures, 
+                    rollup and cube operations, metadata manipulation, data storage and retrieval, security and 
+                    transaction control and data warehousing
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/linux.jpg" alt="Operating System Fundamentals course">
+                <h3>CST8102 Operating System Fundamentals (GNU/Linux)</h3>
+                <p>
+                    Operating systems form the backbone of information technology systems coordinating the
+                    interaction between hardware and software. Students explore the basic concepts and components of Operating
+                    Systems (OS), and how they function and interact with hardware and software components.
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/oop.jpg" alt="Object-Oriented Programming course">
+                <h3>CST8284 Object Oriented Programming (Java)</h3>
+                <p>
+                    Working in the field of information technology as a programmer requires a firm understanding of
+                    Object-Oriented Programming (OOP) concepts. Object oriented concepts, such as encapsulation, 
+                    inheritance, abstraction and polymorphism are covered and reinforced with practical applications. 
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/web_prog.jpg" alt="Web Programming course">
+                <h3>CST8285 Web Programming</h3>
+                <p>
+                    The World Wide Web (WWW) has become an integrated part of everyday life. Students develop basic
+                    skills of web programming, website design and implementation. JavaScript, HTML5, and PHP are used to
+                    explore web-based solutions to problems of increasing interactivity and complexity. Lectures are
+                    reinforced by practical assignments that encourage students to construct and maintain their own websites.
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/tech_commu.jpg" alt="Technical Communication course">
+                <h3>ENL2019T Technical Communication for Engineering Technologies</h3>
+                <p>
+                    The ability to communicate effectively in a technically-oriented interdisciplinary workplace is
+                    a foundational skill in an innovation-driven economy. Students are exposed to exercises and
+                    assignments designed to foster independent and collaborative critical thinking, research, writing, visual
+                    communication and presentation skills related to technical topics.
+                </p>
+            </div>
+            <div class="each-course">
+                <img src="./images/science.jpg" alt="Science of Everyday Life course">
+                <h3>GED5300 The Science of Everyday Life</h3>
+                <p>
+                    The mysteries of science surround us constantly and play a significant role in everyone's daily
+                    life regardless of their level of awareness. Familiarity with the basic concepts of science in
+                    disciplines, such as biology, physics, and chemistry, helps students better understand the world 
+                    in which they live, the attitudes and opinions of those with whom they interact, and the reasons 
+                    why many things happen.
+                </p>
+            </div>
+        </section>
+    </main>
+    
+    <!--footer items-->
+    <footer>
+        <ul>
+            <li class="left-footer">
+                <p> 
+                    8-1371 Bloomsbury Cres. 
+                    Ottawa ON K2C 2Y8
+                </p>
+            </li>
+            <li class="right-footer">
+                <a href="https://www.linkedin.com/in/bobbych/" target="_blank"><img src="./images/LI-Logo.png" alt="link to my LinkedIn"></a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
